@@ -9,7 +9,7 @@ from selenium.webdriver.common.keys import Keys
 chrome_options = webdriver.ChromeOptions()
 prefs = {"profile.default_content_setting_values.notifications" : 2}
 chrome_options.add_experimental_option("prefs",prefs)
-driver = webdriver.Chrome('/home/sangwan/Softwares_Installed/chromedriver_linux644/chromedriver',options=chrome_options)
+driver = webdriver.Chrome('###ENTER_LOCAL_PATH##/chromedriver_linux644/chromedriver',options=chrome_options)
 
 driver.get('https://www.facebook.com/')
 driver.maximize_window()
