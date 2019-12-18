@@ -13,7 +13,7 @@ import os
 from selenium import webdriver
 
 
-driver = webdriver.Chrome('/home/sangwan/Softwares_Installed/chromedriver_linux644/chromedriver')
+driver = webdriver.Chrome('/###ENTER_LOCAL_PATH##chromedriver_linux644/chromedriver')
 driver.get('https://web.whatsapp.com/')
 
 name = input('Enter the name of the user: ')
@@ -30,3 +30,4 @@ for i in range(count):
 	msg_box.send_keys(msg)
 	button = driver.find_element_by_class_name('_3M-N-')
 	button.click() 
+print("Messages Sent Successfully.")
